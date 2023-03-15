@@ -3,17 +3,19 @@ import styled, { css } from 'styled-components/macro';
 import { Link } from 'react-router-dom';
 import { menuData } from '../data/MenuData';
 import { Button } from './Button';
+import { FaBars } from 'react-icons/fa'
+import Bars from '../images/bars.svg';
 
 const Nav = styled.nav`
-    height: 60px;
+    // height: 60px;
     display: flex;
     justify-content: space-between;
     padding: 1rem 2rem;
-    background: red;
     z-index: 100;
     width: 100%;
     position: fixed;
-`;
+    align-items: center;
+    `;
 
 const NavLink = css`
     color: #fff;
@@ -23,20 +25,41 @@ const NavLink = css`
     height: 100%;
     cursor: pointer;
     text-decoration: none;
-`;
+    `;
 
 const Logo = styled(Link)`
     ${NavLink}
     font-style: italic;
     font-weight: bold;
-`;
+    `;
 
-const MenuBars = styled.i``;
+const MenuBars = styled.i`
+    display: none;
+
+    @media screen and (max-width: 768px) {
+        display: block;
+        background-image: url(${Bars});
+        background-size: contain;
+        -webkit-transform: scaleX(-1);
+        transform: translate(-230%, 10%) scaleX(-1);
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    `;
 
 const NavMenu = styled.div`
     display: flex;
     align-items: center;
     margin-right: -48px;
+    vertical-align: middle;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
 `;
 
 const NavMenuLinks = styled(Link)`
@@ -48,12 +71,15 @@ const NavBtn = styled.div`
     align-items: center;
     margin-right: 24px;
 
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
 `;
 
 const Navbar = () => {
     return (
         <Nav>
-            <Logo to="/" >ELIXR</Logo>
+            <Logo to="/" >SunShine Home</Logo>
             <MenuBars />
             <NavMenu >
                 {menuData.map((item, index) => (
