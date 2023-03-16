@@ -146,7 +146,7 @@ export default function Hero({ slides }) {
             }
         };
     }, [current, length]
-    )
+    );
 
     const nextSlide = () => {
         setCurrent(current === length - 1 ? 0 : current + 1);
