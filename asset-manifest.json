@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/animation-website/static/js/main.d3fd88bb.js",
+    "static/js/787.8c6ae78b.chunk.js": "/animation-website/static/js/787.8c6ae78b.chunk.js",
+    "static/media/house-4.jpg": "/animation-website/static/media/house-4.e226c7f302d7f4aff7cc.jpg",
+    "static/media/house-3.jpg": "/animation-website/static/media/house-3.cd266f7f623fc0e424f0.jpg",
+    "static/media/interior-1.jpg": "/animation-website/static/media/interior-1.16c388cdac4e7dd474c9.jpg",
+    "static/media/house-2.jpg": "/animation-website/static/media/house-2.4d70f4861ed60a4e81cc.jpg",
+    "static/media/house-5.jpg": "/animation-website/static/media/house-5.8477a0776fe47b75658e.jpg",
+    "static/media/house-1.jpg": "/animation-website/static/media/house-1.92410e363753d01f573c.jpg",
+    "index.html": "/animation-website/index.html",
+    "static/media/bars.svg": "/animation-website/static/media/bars.5f70ab96a95d6f6a37d2310b74d3abee.svg",
+    "main.d3fd88bb.js.map": "/animation-website/static/js/main.d3fd88bb.js.map",
+    "787.8c6ae78b.chunk.js.map": "/animation-website/static/js/787.8c6ae78b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.d3fd88bb.js"
+  ]
+}
